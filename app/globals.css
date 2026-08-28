@@ -5,7 +5,7 @@
 :root {
   --background: #020617;
   --foreground: #f8fafc;
-  --primary: #ef4444;
+  --primary: #a855f7;
   --primary-glow: rgba(239, 68, 68, 0.15);
   --glass-bg: rgba(15, 23, 42, 0.6);
   --glass-border: rgba(255, 255, 255, 0.05);
@@ -30,7 +30,7 @@ body {
 /* Custom Scrollbar Styles */
 ::-webkit-scrollbar {
   width: 10px;
-}
+}H
 
 ::-webkit-scrollbar-track {
   background: #020617;
@@ -43,7 +43,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ef4444; /* Primary Red */
+  background: #a855f7; /* Primary Red */
 }
 
 /* Firefox */

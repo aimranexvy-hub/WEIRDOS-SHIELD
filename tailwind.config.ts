@@ -28,8 +28,8 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {
-          DEFAULT: "#ef4444", // Vivid Red
-          hover: "#dc2626",
+          DEFAULT: "#a855f7", // Vivid Red
+          hover: "#a855f7",
           glow: "rgba(239, 68, 68, 0.5)",
         },
         secondary: {
