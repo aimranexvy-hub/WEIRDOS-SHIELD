@@ -14,9 +14,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #020617;
-    --foreground: #f8fafc;
-  }
+  --primary-color: #a855f7; /* Violet/Purple Neon */
+  --primary-glow: rgba(168, 85, 247, 0.5);
+  --bg-dark: #09050b;
 }
 
 body {
@@ -66,7 +66,7 @@ body {
     @apply backdrop-blur-xl bg-white/[0.02] border border-white/[0.05];
   }
   .glass-red {
-    @apply backdrop-blur-xl bg-red-500/[0.02] border border-red-500/[0.1];
+    @apply backdrop-blur-xl bg-purple-500/[0.02] border border-purple-500/[0.1];
   }
   .liquid-glass {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);

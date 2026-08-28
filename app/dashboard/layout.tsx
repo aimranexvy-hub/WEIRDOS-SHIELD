@@ -164,7 +164,7 @@ export default function DashboardLayout({
     <div className="min-h-screen bg-[#020617] text-slate-200">
       {/* Liquid Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute top-[-10%] right-[-10%] w-[40%] h-[40%] bg-red-500/5 blur-[120px] rounded-full animate-pulse" />
+        <div className="absolute top-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-500/5 blur-[120px] rounded-full animate-pulse" />
         <div className="absolute bottom-[10%] left-[-5%] w-[30%] h-[30%] bg-indigo-500/5 blur-[100px] rounded-full animate-pulse [animation-delay:2s]" />
       </div>
 
@@ -186,14 +186,14 @@ export default function DashboardLayout({
         {/* Header */}
         <div className="flex h-16 items-center px-6 mt-4 flex-shrink-0">
           <div className="flex items-center gap-3 group">
-            <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-red-500 to-red-800 flex items-center justify-center shadow-lg shadow-red-500/20 group-hover:scale-110 transition-transform border border-white/10">
+            <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-purple-600 to-indigo-600500 to-red-800 flex items-center justify-center shadow-lg shadow-red-500/20 group-hover:scale-110 transition-transform border border-white/10">
               <Bot className="h-5 w-5 text-white" />
             </div>
             <div className="flex flex-col">
               <h1 className="text-lg font-bold tracking-tight text-white font-outfit leading-none">
                 {process.env.NEXT_PUBLIC_BRAND_NAME || "ZyroX"}
               </h1>
-              <span className="text-[9px] font-black uppercase tracking-[0.2em] text-red-500/80 mt-1">
+              <span className="text-[9px] font-black uppercase tracking-[0.2em] text-purple-500/80 mt-1">
                 Dashboard
               </span>
             </div>
@@ -225,7 +225,7 @@ export default function DashboardLayout({
                           className={cn(
                             "flex items-center gap-3 px-4 py-2.5 rounded-xl transition-all duration-300 group text-[13px] font-bold",
                             isActive
-                              ? "bg-red-500/10 text-red-500 border border-red-500/20 shadow-[0_0_20px_rgba(239,68,68,0.1)]"
+                              ? "bg-purple-500/10 text-purple-500 border border-purple-500/20 shadow-[0_0_20px_rgba(239,68,68,0.1)]"
                               : "text-slate-400 hover:bg-white/[0.03] hover:text-slate-200"
                           )}
                         >
@@ -233,13 +233,13 @@ export default function DashboardLayout({
                             className={cn(
                               "h-4 w-4 transition-all duration-300",
                               isActive
-                                ? "text-red-500 scale-110"
+                                ? "text-purple-500 scale-110"
                                 : "text-slate-600 group-hover:text-slate-400"
                             )}
                           />
                           {subItem.name}
                           {isActive && (
-                            <div className="ml-auto w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse shadow-[0_0_10px_rgba(239,68,68,0.5)]" />
+                            <div className="ml-auto w-1.5 h-1.5 rounded-full bg-purple-500 animate-pulse shadow-[0_0_10px_rgba(239,68,68,0.5)]" />
                           )}
                         </Link>
                       );
@@ -257,19 +257,19 @@ export default function DashboardLayout({
                 className={cn(
                   "flex items-center gap-4 px-4 py-3 rounded-2xl transition-all duration-300 group text-[14px] font-bold",
                   isActive
-                    ? "bg-red-500/10 text-red-500 border border-red-500/20 shadow-[0_0_20px_rgba(239,68,68,0.1)]"
+                    ? "bg-purple-500/10 text-purple-500 border border-purple-500/20 shadow-[0_0_20px_rgba(239,68,68,0.1)]"
                     : "text-slate-400 hover:bg-white/[0.03] hover:text-slate-200"
                 )}
               >
                 <item.icon
                   className={cn(
                     "h-5 w-5 transition-all duration-300",
-                    isActive ? "text-red-500 scale-110" : "text-slate-600 group-hover:text-slate-400"
+                    isActive ? "text-purple-500 scale-110" : "text-slate-600 group-hover:text-slate-400"
                   )}
                 />
                 {item.name}
                 {isActive ? (
-                  <ChevronRight className="ml-auto h-4 w-4 text-red-500" />
+                  <ChevronRight className="ml-auto h-4 w-4 text-purple-500" />
                 ) : (
                   <ChevronRight className="ml-auto h-4 w-4 opacity-0 group-hover:opacity-30 transition-opacity" />
                 )}
@@ -287,7 +287,7 @@ export default function DashboardLayout({
               className={cn(
                 "flex items-center gap-4 px-4 py-3 rounded-2xl transition-all duration-300 group text-[14px] font-bold",
                 pathname === backLinkItem.href
-                  ? "bg-red-500/10 text-red-500 border border-red-500/20 shadow-[0_0_20px_rgba(239,68,68,0.1)]"
+                  ? "bg-purple-500/10 text-purple-500 border border-purple-500/20 shadow-[0_0_20px_rgba(239,68,68,0.1)]"
                   : "text-slate-400 hover:bg-white/[0.03] hover:text-slate-200"
               )}
             >
@@ -295,13 +295,13 @@ export default function DashboardLayout({
                 className={cn(
                   "h-5 w-5 transition-all duration-300",
                   pathname === backLinkItem.href
-                    ? "text-red-500 scale-110"
+                    ? "text-purple-500 scale-110"
                     : "text-slate-600 group-hover:text-slate-400"
                 )}
               />
               {backLinkItem.name}
               {pathname === backLinkItem.href ? (
-                <ChevronRight className="ml-auto h-4 w-4 text-red-500" />
+                <ChevronRight className="ml-auto h-4 w-4 text-purple-500" />
               ) : (
                 <ChevronRight className="ml-auto h-4 w-4 opacity-0 group-hover:opacity-30 transition-opacity" />
               )}
@@ -310,9 +310,9 @@ export default function DashboardLayout({
         )}
 
         {/* User Profile - now a normal flex child, no absolute positioning */}
-        <div className="flex-shrink-0 p-4 border-t border-white/5 glass-red bg-red-500/[0.02]">
+        <div className="flex-shrink-0 p-4 border-t border-white/5 glass-red bg-purple-500/[0.02]">
           <div className="flex items-center gap-3 p-2 bg-white/[0.02] rounded-2xl border border-white/[0.05]">
-            <div className="h-10 w-10 rounded-full bg-red-500/10 flex items-center justify-center ring-1 ring-white/10 overflow-hidden border border-red-500/20">
+            <div className="h-10 w-10 rounded-full bg-purple-500/10 flex items-center justify-center ring-1 ring-white/10 overflow-hidden border border-purple-500/20">
               {session?.user?.image ? (
                 <img
                   src={session.user.image}
@@ -320,14 +320,14 @@ export default function DashboardLayout({
                   className="h-full w-full object-cover opacity-80"
                 />
               ) : (
-                <User className="h-6 w-6 text-red-500/50" />
+                <User className="h-6 w-6 text-purple-500/50" />
               )}
             </div>
             <div className="overflow-hidden">
               <p className="text-sm font-bold text-white truncate font-outfit">
                 {session?.user?.name || "Administrator"}
               </p>
-              <p className="text-[10px] font-black uppercase text-red-500/60 truncate tracking-widest">
+              <p className="text-[10px] font-black uppercase text-purple-500/60 truncate tracking-widest">
                 User
               </p>
             </div>
@@ -347,7 +347,7 @@ export default function DashboardLayout({
           </button>
 
           <div className="hidden md:flex items-center w-96 max-w-full relative group">
-            <Search className="absolute left-4 h-4 w-4 text-slate-500 group-focus-within:text-red-500 transition-colors" />
+            <Search className="absolute left-4 h-4 w-4 text-slate-500 group-focus-within:text-purple-500 transition-colors" />
             <input
               type="text"
               placeholder="Query neural network..."
@@ -363,7 +363,7 @@ export default function DashboardLayout({
               >
                 <Bell className="h-5 w-5" />
                 {globalNotification && (
-                  <span className="absolute top-2 right-2 h-2 w-2 rounded-full bg-red-500 border-2 border-[#020617] shadow-[0_0_10px_rgba(239,68,68,0.5)]"></span>
+                  <span className="absolute top-2 right-2 h-2 w-2 rounded-full bg-purple-500 border-2 border-[#020617] shadow-[0_0_10px_rgba(239,68,68,0.5)]"></span>
                 )}
               </button>
 
@@ -373,17 +373,17 @@ export default function DashboardLayout({
                       <p className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Broadcast Metrics</p>
                       <button 
                         onClick={() => setGlobalNotification(null)}
-                        className="text-[10px] font-bold text-red-500/60 hover:text-red-500 transition-colors uppercase"
+                        className="text-[10px] font-bold text-purple-500/60 hover:text-purple-500 transition-colors uppercase"
                       >
                         Clear
                       </button>
                     </div>
                     
                     {globalNotification ? (
-                      <div className="bg-red-500/5 border border-red-500/10 rounded-2xl p-4">
+                      <div className="bg-purple-500/5 border border-purple-500/10 rounded-2xl p-4">
                         <div className="flex items-center gap-2 mb-2">
-                          <Sparkles className="h-3 w-3 text-red-500" />
-                          <span className="text-[10px] font-black uppercase text-red-500 tracking-widest">System Broadcast</span>
+                          <Sparkles className="h-3 w-3 text-purple-500" />
+                          <span className="text-[10px] font-black uppercase text-purple-500 tracking-widest">System Broadcast</span>
                         </div>
                         <p className="text-xs font-medium text-slate-300 leading-relaxed">
                           {globalNotification}
@@ -409,18 +409,18 @@ export default function DashboardLayout({
                 onClick={() => setIsProfileOpen(!isProfileOpen)}
                 className="flex items-center gap-3.5 p-1.5 rounded-2xl hover:bg-white/5 transition-all group border border-transparent hover:border-white/10"
               >
-                <div className="h-9 w-9 rounded-full bg-red-500/10 flex items-center justify-center overflow-hidden border border-red-500/20 ring-2 ring-transparent group-hover:ring-red-500/30 transition-all">
+                <div className="h-9 w-9 rounded-full bg-purple-500/10 flex items-center justify-center overflow-hidden border border-purple-500/20 ring-2 ring-transparent group-hover:ring-red-500/30 transition-all">
                   {session?.user?.image ? (
                     <img src={session.user.image} alt="User Avatar" className="h-full w-full object-cover opacity-80" />
                   ) : (
-                    <User className="h-5 w-5 text-red-500/50" />
+                    <User className="h-5 w-5 text-purple-500/50" />
                   )}
                 </div>
                 <div className="hidden sm:flex flex-col items-start leading-none gap-1">
                   <span className="text-xs font-bold text-slate-200 group-hover:text-white transition-colors">
                     {session?.user?.name?.split(' ')[0] || "Admin"}
                   </span>
-                  <span className="text-[9px] font-black uppercase text-red-500/60 tracking-widest">Active</span>
+                  <span className="text-[9px] font-black uppercase text-purple-500/60 tracking-widest">Active</span>
                 </div>
                 <ChevronDown
                   className={cn("h-4 w-4 text-slate-600 transition-transform hidden sm:block", isProfileOpen && "rotate-180")}
@@ -435,13 +435,13 @@ export default function DashboardLayout({
                     </div>
 
                     <button className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-xs font-bold text-slate-400 hover:bg-white/5 hover:text-white transition-all group/item">
-                      <LifeBuoy className="h-4 w-4 text-slate-600 group-hover/item:text-red-500 transition-colors" />
+                      <LifeBuoy className="h-4 w-4 text-slate-600 group-hover/item:text-purple-500 transition-colors" />
                       Support Matrix
                     </button>
 
                     <button
                       onClick={() => signOut({ callbackUrl: '/' })}
-                      className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-xs font-black uppercase tracking-widest text-red-500/80 hover:bg-red-500/10 hover:text-red-500 transition-all group/item"
+                      className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-xs font-black uppercase tracking-widest text-purple-500/80 hover:bg-purple-500/10 hover:text-purple-500 transition-all group/item"
                     >
                       <LogOut className="h-4 w-4" />
                       Deauthorize
