@@ -80,5 +80,6 @@ body {
 @media (prefers-color-scheme: dark) {
   :root {
     --primary-color: #a855f7; /* Violet/Purple Neon */
+    --background: #09050b; /* Deep violet-black background */
   }
 }
