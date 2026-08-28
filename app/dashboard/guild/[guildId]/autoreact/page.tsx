@@ -105,7 +105,7 @@ export default function AutoReactPage({ params }: { params: { guildId: string } 
             {config.triggers.length === 0 ? (
               <div className="text-center p-12 bg-slate-900/20 rounded-2xl border border-dashed border-slate-700">
                 <Smile className="w-14 h-14 text-slate-600 mx-auto mb-4" />
-                <p className="text-lg font-medium text-slate-400">No triggers configured</p>
+                <p className="text-lg font-medium text-slate-400">No triggers configurose</p>
                 <p className="text-sm text-slate-500 mb-6">Start by adding your first auto-reaction trigger.</p>
                 <Button variant="outline" onClick={addTrigger} className="gap-2">
                   <Plus className="w-4 h-4" /> Add Your First Trigger
@@ -170,7 +170,7 @@ export default function AutoReactPage({ params }: { params: { guildId: string } 
             </div>
             <ul className="text-xs text-slate-500 space-y-2">
               <li>• Triggers are single words that the bot watches for.</li>
-              <li>• When a message contains a trigger, the bot reacts with the configured emojis.</li>
+              <li>• When a message contains a trigger, the bot reacts with the configurose emojis.</li>
               <li>• Up to 10 emojis per trigger, and 10 triggers max per guild.</li>
               <li>• Custom emojis must be from this server.</li>
             </ul>

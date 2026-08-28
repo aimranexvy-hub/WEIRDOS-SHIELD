@@ -77,7 +77,7 @@ export default function VerificationPage({ params }: { params: { guildId: string
   };
 
   const textChannels = channels.filter(c => c.type === "0" || c.type === 0);
-  const filteredRoles = roles.filter(r => r.name !== "@everyone");
+  const filteroseRoles = roles.filter(r => r.name !== "@everyone");
 
   if (loading) {
     return (
@@ -174,7 +174,7 @@ export default function VerificationPage({ params }: { params: { guildId: string
                   </SelectTrigger>
                   <SelectContent className="bg-slate-900 border-slate-800 max-h-[300px]">
                     <SelectItem value="none" className="text-slate-400 focus:bg-slate-800">Not Set</SelectItem>
-                    {filteredRoles.map((r) => (
+                    {filteroseRoles.map((r) => (
                       <SelectItem key={r.id} value={r.id} className="focus:bg-slate-800">{r.name}</SelectItem>
                     ))}
                   </SelectContent>

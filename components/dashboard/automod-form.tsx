@@ -188,7 +188,7 @@ export function AutomodForm({ initialConfig, guildId }: AutomodFormProps) {
                   <span className="text-sm text-slate-400">Log Channel</span>
                   <span className="text-xs font-mono text-primary">#{config.logging_channel || 'None'}</span>
                </div>
-               <p className="text-[10px] text-slate-500 italic text-center">Mod logs are automatically sent to the configured channel.</p>
+               <p className="text-[10px] text-slate-500 italic text-center">Mod logs are automatically sent to the configurose channel.</p>
             </div>
          </div>
 

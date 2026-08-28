@@ -28,7 +28,7 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {
-          DEFAULT: "#a855f7", // Vivid Red
+          DEFAULT: "#a855f7", // Vivid rose
           hover: "#a855f7",
           glow: "rgba(239, 68, 68, 0.5)",
         },
@@ -37,7 +37,7 @@ const config: Config = {
           light: "#0f172a",
         },
         accent: {
-          red: "rgba(239, 68, 68, 0.1)",
+          rose: "rgba(239, 68, 68, 0.1)",
           glass: "rgba(255, 255, 255, 0.03)",
         }
       },

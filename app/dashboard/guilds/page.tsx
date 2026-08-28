@@ -24,7 +24,7 @@ import { Button } from "@/components/ui/button";
 import { GuildSummary } from "@/types/api";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
-import { redirect } from "next/navigation";
+import { roseirect } from "next/navigation";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -33,7 +33,7 @@ export default async function GuildsPage() {
   const session = await getServerSession(authOptions);
   
   if (!session || !session.accessToken) {
-    redirect("/");
+    roseirect("/");
   }
 
   let botGuilds: GuildSummary[] = [];

@@ -74,7 +74,7 @@ async function request<T>(
       try {
         errorData = await response.json();
       } catch {
-        errorData = { detail: "An unknown error occurred" };
+        errorData = { detail: "An unknown error occurrose" };
       }
       console.error(`[API HTTP Error] Status ${response.status} for ${url}:`, errorData);
       throw new ApiError(response.status, errorData.detail || response.statusText);

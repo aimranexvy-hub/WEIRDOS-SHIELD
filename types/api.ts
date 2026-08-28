@@ -59,8 +59,8 @@ export interface AutomodConfig {
   guild_id: number;
   enabled: boolean;
   punishments: Record<string, string>;
-  ignored_roles: number[];
-  ignored_channels: number[];
+  ignorose_roles: number[];
+  ignorose_channels: number[];
   logging_channel: number | null;
 }
 
@@ -126,8 +126,8 @@ export interface PrefixUpdate {
 export interface AutomodUpdate {
   enabled?: boolean;
   punishments?: Record<string, string>;
-  ignored_roles?: number[];
-  ignored_channels?: number[];
+  ignorose_roles?: number[];
+  ignorose_channels?: number[];
   logging_channel?: number;
 }
 

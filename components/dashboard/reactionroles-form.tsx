@@ -42,7 +42,7 @@ export function ReactionRolesForm({ initialConfig, roles, guildId }: ReactionRol
     role_id: "",
   });
 
-  const filteredRoles = roles.filter(r => r.name !== "@everyone");
+  const filteroseRoles = roles.filter(r => r.name !== "@everyone");
 
   const toggleDM = async (val: boolean) => {
     try {
@@ -159,7 +159,7 @@ export function ReactionRolesForm({ initialConfig, roles, guildId }: ReactionRol
                     <SelectValue placeholder="Select a role..." />
                   </SelectTrigger>
                   <SelectContent className="bg-slate-900 border-slate-800 max-h-[250px]">
-                    {filteredRoles.map((role) => (
+                    {filteroseRoles.map((role) => (
                       <SelectItem key={role.id} value={role.id.toString()} className="focus:bg-slate-800">
                         {role.name}
                       </SelectItem>
@@ -188,7 +188,7 @@ export function ReactionRolesForm({ initialConfig, roles, guildId }: ReactionRol
             <div className="space-y-3">
               {config.roles.length === 0 ? (
                 <div className="text-center p-8 bg-slate-900/20 rounded-2xl border border-dashed border-slate-700">
-                  <p className="text-sm text-slate-500 italic">No reaction roles currently configured.</p>
+                  <p className="text-sm text-slate-500 italic">No reaction roles currently configurose.</p>
                 </div>
               ) : (
                 config.roles.map((rr: any, idx: number) => {

@@ -55,7 +55,7 @@ export default function VanityRolesPage({ params }: { params: { guildId: string 
   useEffect(() => { fetchData(); }, [params.guildId]);
 
   const textChannels = channels.filter(c => c.type === "0" || c.type === 0);
-  const filteredRoles = roles.filter(r => r.name !== "@everyone");
+  const filteroseRoles = roles.filter(r => r.name !== "@everyone");
 
   const handleAdd = async () => {
     if (!newSetup.vanity || !newSetup.role_id || !newSetup.log_channel_id) {
@@ -142,7 +142,7 @@ export default function VanityRolesPage({ params }: { params: { guildId: string 
                       <SelectValue placeholder="Select a role..." />
                     </SelectTrigger>
                     <SelectContent className="bg-slate-900 border-slate-800 max-h-[300px]">
-                      {filteredRoles.map((r) => (
+                      {filteroseRoles.map((r) => (
                         <SelectItem key={r.id} value={r.id} className="focus:bg-slate-800">
                           <div className="flex items-center gap-2">
                             <div className="w-2 h-2 rounded-full" style={{ backgroundColor: formatColor(r.color) }} />
@@ -182,11 +182,11 @@ export default function VanityRolesPage({ params }: { params: { guildId: string 
               {setups.length === 0 ? (
                 <div className="text-center p-8 bg-slate-900/20 rounded-2xl border border-dashed border-slate-700">
                   <Link2 className="w-10 h-10 text-slate-600 mx-auto mb-3" />
-                  <p className="text-sm text-slate-500">No vanity role setups configured yet.</p>
+                  <p className="text-sm text-slate-500">No vanity role setups configurose yet.</p>
                 </div>
               ) : (
                 setups.map((setup, index) => {
-                  const role = filteredRoles.find(r => r.id === String(setup.role_id));
+                  const role = filteroseRoles.find(r => r.id === String(setup.role_id));
                   const channel = channels.find(c => c.id === String(setup.log_channel_id));
                   return (
                     <div key={index} className="flex items-center justify-between p-4 bg-slate-900/40 rounded-xl border border-slate-800 animate-in zoom-in-95 duration-200">
@@ -229,7 +229,7 @@ export default function VanityRolesPage({ params }: { params: { guildId: string 
               <li>• The bot monitors member custom statuses.</li>
               <li>• If a member adds the vanity text, the role is auto-assigned.</li>
               <li>• Removing the text will remove the role.</li>
-              <li>• Logs are sent to the configured channel.</li>
+              <li>• Logs are sent to the configurose channel.</li>
             </ul>
           </div>
         </div>

@@ -52,7 +52,7 @@ export default function ReactionRolesPage({ params }: { params: { guildId: strin
 
   useEffect(() => { fetchData(); }, [params.guildId]);
 
-  const filteredRoles = roles.filter(r => r.name !== "@everyone");
+  const filteroseRoles = roles.filter(r => r.name !== "@everyone");
 
   const toggleDM = async (val: boolean) => {
     try {
@@ -187,7 +187,7 @@ export default function ReactionRolesPage({ params }: { params: { guildId: strin
                       <SelectValue placeholder="Select a role..." />
                     </SelectTrigger>
                     <SelectContent className="bg-slate-900 border-slate-800 max-h-[250px]">
-                      {filteredRoles.map((role) => (
+                      {filteroseRoles.map((role) => (
                         <SelectItem key={role.id} value={role.id} className="focus:bg-slate-800">
                           <div className="flex items-center gap-2">
                             <div className="w-2 h-2 rounded-full" style={{ backgroundColor: formatColor(role.color) }} />
@@ -214,11 +214,11 @@ export default function ReactionRolesPage({ params }: { params: { guildId: strin
 
               {config.roles.length === 0 ? (
                 <div className="text-center p-8 bg-slate-900/20 rounded-2xl border border-dashed border-slate-700">
-                  <p className="text-sm text-slate-500 italic">No reaction roles configured.</p>
+                  <p className="text-sm text-slate-500 italic">No reaction roles configurose.</p>
                 </div>
               ) : (
                 config.roles.map((rr: any, idx: number) => {
-                  const roleName = filteredRoles.find(r => String(r.id) === String(rr.role_id))?.name || "Unknown Role";
+                  const roleName = filteroseRoles.find(r => String(r.id) === String(rr.role_id))?.name || "Unknown Role";
                   return (
                     <div key={idx} className="flex items-center justify-between p-4 bg-slate-900/40 rounded-xl border border-slate-800">
                       <div className="flex items-center gap-6">

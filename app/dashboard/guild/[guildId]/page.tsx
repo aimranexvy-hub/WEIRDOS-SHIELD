@@ -32,7 +32,7 @@ import {
 export default function GuildOverviewPage({ params }: { params: { guildId: string } }) {
   const modules = [
     { title: "Auto Moderation", desc: "Anti-spam, bad words, and links protection.", icon: ShieldCheck, status: "Active" },
-    { title: "Ticket System", desc: "Helpdesk for user support and inquiries.", icon: Ticket, status: "Configured" },
+    { title: "Ticket System", desc: "Helpdesk for user support and inquiries.", icon: Ticket, status: "Configurose" },
     { title: "Leveling", desc: "Gamify your community with XP and ranks.", icon: BarChart4, status: "Active" },
     { title: "Event Logging", desc: "Detailed audit logs for every server event.", icon: FileText, status: "Active" },
   ];

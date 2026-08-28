@@ -88,7 +88,7 @@ export default function DocsPage() {
             <input 
               type="text" 
               placeholder="Search documentation..."
-              className="w-full bg-white/[0.03] border border-white/5 rounded-2xl py-2.5 pl-12 pr-4 text-xs font-bold text-slate-300 focus:outline-none focus:ring-1 focus:ring-red-500/30 focus:bg-white/[0.05] transition-all"
+              className="w-full bg-white/[0.03] border border-white/5 rounded-2xl py-2.5 pl-12 pr-4 text-xs font-bold text-slate-300 focus:outline-none focus:ring-1 focus:ring-rose-500/30 focus:bg-white/[0.05] transition-all"
             />
           </div>
         </div>

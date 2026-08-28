@@ -64,7 +64,7 @@ export default function InvcRolePage({ params }: { params: { guildId: string } }
     try { await promise; } catch {} finally { setSaving(false); }
   };
 
-  const filteredRoles = roles.filter(r => r.name !== "@everyone");
+  const filteroseRoles = roles.filter(r => r.name !== "@everyone");
 
   if (loading) {
     return (
@@ -143,7 +143,7 @@ export default function InvcRolePage({ params }: { params: { guildId: string } }
                 </SelectTrigger>
                 <SelectContent className="bg-slate-900 border-slate-800 max-h-[300px]">
                   <SelectItem value="none" className="text-slate-400 focus:bg-slate-800">No Role Selected</SelectItem>
-                  {filteredRoles.map((r) => (
+                  {filteroseRoles.map((r) => (
                     <SelectItem key={r.id} value={r.id} className="focus:bg-slate-800">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full" style={{ backgroundColor: formatColor(r.color) }} />

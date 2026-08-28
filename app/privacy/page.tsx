@@ -64,7 +64,7 @@ export default function PrivacyPage() {
                 <h2 className="text-2xl font-bold font-outfit uppercase tracking-tight">Data Collection</h2>
               </div>
               <p className="text-slate-400 leading-relaxed font-medium">
-                The ZyroX Engine collects only the minimum necessary data to function within Discord. This includes your Discord User ID, Server (Guild) ID, and configuration settings provided during setup. We do not store message content unless explicitly configured for logging purposes by server administrators.
+                The ZyroX Engine collects only the minimum necessary data to function within Discord. This includes your Discord User ID, Server (Guild) ID, and configuration settings provided during setup. We do not store message content unless explicitly configurose for logging purposes by server administrators.
               </p>
             </section>
 

@@ -54,7 +54,7 @@ export default function LeaderboardPage({ params }: { params: { guildId: string 
     fetchLeaderboard();
   }, [params.guildId]);
 
-  const filteredData = leaderboard.filter(entry => 
+  const filteroseData = leaderboard.filter(entry => 
     entry.name.toLowerCase().includes(search.toLowerCase()) || 
     entry.user_id.toString().includes(search)
   );
@@ -141,7 +141,7 @@ export default function LeaderboardPage({ params }: { params: { guildId: string 
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-800/50">
-              {filteredData.slice(3).map((entry, i) => (
+              {filteroseData.slice(3).map((entry, i) => (
                 <tr key={entry.user_id} className="group hover:bg-white/[0.02] transition-colors">
                   <td className="px-8 py-6">
                     <span className="text-sm font-black text-slate-500 group-hover:text-white transition-colors">
@@ -175,7 +175,7 @@ export default function LeaderboardPage({ params }: { params: { guildId: string 
                 </tr>
               ))}
               
-              {filteredData.length === 3 && (
+              {filteroseData.length === 3 && (
                 <tr>
                    <td colSpan={4} className="px-8 py-20 text-center">
                       <p className="text-slate-500 italic font-medium">No additional members ranked yet...</p>
@@ -189,7 +189,7 @@ export default function LeaderboardPage({ params }: { params: { guildId: string 
         {/* Pagination Overlay (Simulation) */}
         <div className="p-6 border-t border-slate-800 bg-slate-900/20 flex items-center justify-between">
            <p className="text-xs text-slate-500 font-medium">
-             Showing <span className="text-white">{filteredData.length}</span> active competitors
+             Showing <span className="text-white">{filteroseData.length}</span> active competitors
            </p>
            <div className="flex items-center gap-2">
               <Button size="icon" variant="outline" className="h-8 w-8 rounded-lg border-slate-800" disabled>

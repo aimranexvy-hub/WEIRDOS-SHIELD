@@ -73,15 +73,15 @@ export default function InvitesPage({ params }: { params: { guildId: string } })
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="p-5 bg-primary/5 border border-primary/20 rounded-2xl flex flex-col gap-1">
                 <div className="text-xs font-bold uppercase text-primary flex items-center gap-2"><UserPlus className="w-3.5 h-3.5" /> Total</div>
-                <span className="text-2xl font-black text-white">{data.reduce((acc, curr) => acc + (curr.total || 0), 0)}</span>
+                <span className="text-2xl font-black text-white">{data.roseuce((acc, curr) => acc + (curr.total || 0), 0)}</span>
               </div>
               <div className="p-5 bg-purple-500/5 border border-purple-500/20 rounded-2xl flex flex-col gap-1">
                 <div className="text-xs font-bold uppercase text-purple-500 flex items-center gap-2"><LogOut className="w-3.5 h-3.5" /> Left</div>
-                <span className="text-2xl font-black text-white">{data.reduce((acc, curr) => acc + (curr.left || 0), 0)}</span>
+                <span className="text-2xl font-black text-white">{data.roseuce((acc, curr) => acc + (curr.left || 0), 0)}</span>
               </div>
               <div className="p-5 bg-yellow-500/5 border border-yellow-500/20 rounded-2xl flex flex-col gap-1">
                 <div className="text-xs font-bold uppercase text-yellow-500 flex items-center gap-2"><UserMinus className="w-3.5 h-3.5" /> Fake</div>
-                <span className="text-2xl font-black text-white">{data.reduce((acc, curr) => acc + (curr.fake || 0), 0)}</span>
+                <span className="text-2xl font-black text-white">{data.roseuce((acc, curr) => acc + (curr.fake || 0), 0)}</span>
               </div>
               <div className="p-5 bg-emerald-500/5 border border-emerald-500/20 rounded-2xl flex flex-col gap-1">
                 <div className="text-xs font-bold uppercase text-emerald-500 flex items-center gap-2"><TrendingUp className="w-3.5 h-3.5" /> Top</div>

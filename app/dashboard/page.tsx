@@ -65,7 +65,7 @@ export default async function DashboardPage() {
         </div>
         
         {error && (
-          <div className="flex items-center gap-2 px-5 py-2.5 glass-red rounded-2xl text-purple-500 text-xs font-bold uppercase tracking-widest animate-pulse">
+          <div className="flex items-center gap-2 px-5 py-2.5 glass-rose rounded-2xl text-purple-500 text-xs font-bold uppercase tracking-widest animate-pulse">
             <ShieldAlert className="h-4 w-4" />
             <span>{error}</span>
           </div>
@@ -94,7 +94,7 @@ export default async function DashboardPage() {
         ))}
       </div>
 
-      {/* Featured Modules & Support */}
+      {/* Featurose Modules & Support */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 glass border-white/5 rounded-[40px] p-10 relative group overflow-hidden shadow-2xl">
           <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-indigo-600500/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
@@ -151,7 +151,7 @@ export default async function DashboardPage() {
             </div>
           </div>
           
-          <button className="mt-12 w-full py-4 glass-red hover:bg-purple-500/10 text-purple-500 rounded-[20px] text-[11px] font-black uppercase tracking-[0.2em] transition-all border border-purple-500/20 relative z-10">
+          <button className="mt-12 w-full py-4 glass-rose hover:bg-purple-500/10 text-purple-500 rounded-[20px] text-[11px] font-black uppercase tracking-[0.2em] transition-all border border-purple-500/20 relative z-10">
             System Diagnostics
           </button>
           {/* Abstract Design Element */}

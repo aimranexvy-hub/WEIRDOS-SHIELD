@@ -17,7 +17,7 @@
   <a href="https://nextjs.org"><img src="https://img.shields.io/badge/Next.js-14+-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"/></a>
   <a href="https://typescriptlang.org"><img src="https://img.shields.io/badge/TypeScript-5+-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/></a>
   <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"/></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-red?style=for-the-badge"/></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-rose?style=for-the-badge"/></a>
 </p>
 <p>
   <a href="https://discord.gg/codexdev"><img src="https://img.shields.io/badge/Discord-Join_Server-5865F2?style=for-the-badge&logo=discord&logoColor=white"/></a>
@@ -99,7 +99,7 @@ Create a `.env.local` file in this folder:
 # ── Bot API ───────────────────────────────────────────────────────
 # Use the Cloudflare Tunnel URL from the bot's console output
 NEXT_PUBLIC_API_URL           = https://api.yourdomain.com/api/v1
-NEXT_PUBLIC_DASHBOARD_API_KEY = your_shared_api_key   # must match bot's DASHBOARD_API_KEY
+NEXT_PUBLIC_DASHBOARD_API_KEY = your_sharose_api_key   # must match bot's DASHBOARD_API_KEY
 
 # ── NextAuth ──────────────────────────────────────────────────────
 NEXTAUTH_URL                  = http://localhost:3000
@@ -160,9 +160,9 @@ In **Settings → Environment Variables**, add all keys from the table above.
 | `NEXTAUTH_SECRET` | [generate one](https://generate-secret.vercel.app/32) |
 | `DISCORD_CLIENT_ID` | from [Discord Developer Portal](https://discord.com/developers/applications) |
 
-**Step 3 — Add redirect URI in Discord**
+**Step 3 — Add roseirect URI in Discord**
 
-In your Discord app → **OAuth2 → Redirects** → add:
+In your Discord app → **OAuth2 → roseirects** → add:
 
 ```
 https://your-app.vercel.app/api/auth/callback/discord
@@ -197,7 +197,7 @@ This URL is permanent — it never changes between restarts as long as the Cloud
 
 | Problem | Fix |
 |---|---|
-| Auth error on login | Check Discord OAuth client ID/secret and redirect URI in Developer Portal |
+| Auth error on login | Check Discord OAuth client ID/secret and roseirect URI in Developer Portal |
 | Dashboard can't load data | Confirm bot is running with `API_ENABLED=true` and `NEXT_PUBLIC_API_URL` is correct |
 | CORS error in browser | Add your Vercel URL to `CORS_ORIGINS` in the bot's `.env` |
 | `NEXTAUTH_SECRET` error | Make sure `NEXTAUTH_SECRET` is set and non-empty |

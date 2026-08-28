@@ -9,7 +9,7 @@
   --primary-glow: rgba(239, 68, 68, 0.15);
   --glass-bg: rgba(15, 23, 42, 0.6);
   --glass-border: rgba(255, 255, 255, 0.05);
-  --glass-red-border: rgba(239, 68, 68, 0.2);
+  --glass-rose-border: rgba(239, 68, 68, 0.2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,7 +43,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a855f7; /* Primary Red */
+  background: #a855f7; /* Primary rose */
 }
 
 /* Firefox */
@@ -66,7 +66,7 @@ body {
   .glass {
     @apply backdrop-blur-xl bg-white/[0.02] border border-white/[0.05];
   }
-  .glass-red {
+  .glass-rose {
     @apply backdrop-blur-xl bg-purple-500/[0.02] border border-purple-500/[0.1];
   }
   .liquid-glass {

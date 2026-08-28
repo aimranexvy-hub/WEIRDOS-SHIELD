@@ -60,7 +60,7 @@ export default function LandingPage() {
       <nav className="fixed top-0 w-full z-50 border-b border-white/[0.03] bg-[#020617]/80 backdrop-blur-3xl transition-all duration-500">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4 group cursor-pointer">
-            <div className="h-11 w-11 rounded-2xl bg-gradient-to-br from-purple-600 to-indigo-600500 to-red-800 flex items-center justify-center shadow-lg shadow-red-500/25 border border-white/20 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+            <div className="h-11 w-11 rounded-2xl bg-gradient-to-br from-purple-600 to-indigo-600500 to-rose-800 flex items-center justify-center shadow-lg shadow-rose-500/25 border border-white/20 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
               <Bot className="h-6 w-6 text-white" />
             </div>
             <div className="flex flex-col">
@@ -79,7 +79,7 @@ export default function LandingPage() {
           <div className="flex items-center gap-4">
             <Button 
               onClick={() => signIn('discord', { callbackUrl: '/dashboard' })}
-              className="rounded-xl px-7 h-11 font-black uppercase tracking-widest text-[10px] gap-2.5 shadow-2xl shadow-red-500/20 hover:scale-[1.05] active:scale-95 transition-all bg-gradient-to-r from-purple-600 to-indigo-600500 to-red-700 border-none"
+              className="rounded-xl px-7 h-11 font-black uppercase tracking-widest text-[10px] gap-2.5 shadow-2xl shadow-rose-500/20 hover:scale-[1.05] active:scale-95 transition-all bg-gradient-to-r from-purple-600 to-indigo-600500 to-rose-700 border-none"
             >
               <LogIn className="h-3.5 w-3.5" />
               Initialize Console
@@ -101,7 +101,7 @@ export default function LandingPage() {
           
           <h1 className="text-6xl sm:text-8xl md:text-[10rem] font-bold text-white tracking-tighter leading-[0.8] mb-12 font-outfit animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-100 uppercase">
             Evolution <br />
-            <span className="bg-gradient-to-r from-purple-600 to-indigo-600500 via-red-400 from-purple-600 to-indigo-600500 bg-clip-text text-transparent italic font-black">Moderated.</span>
+            <span className="bg-gradient-to-r from-purple-600 to-indigo-600500 via-rose-400 from-purple-600 to-indigo-600500 bg-clip-text text-transparent italic font-black">Moderated.</span>
           </h1>
 
           <p className="text-lg md:text-2xl text-slate-500 max-w-3xl mx-auto leading-relaxed mb-20 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-200 font-medium">
@@ -173,7 +173,7 @@ export default function LandingPage() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-32 gap-12 px-4">
             <div className="max-w-3xl">
               <h2 className="text-6xl md:text-8xl font-bold text-white tracking-tighter font-outfit mb-8 uppercase italic leading-none">High-Scale <br /><span className="text-purple-500 not-italic">Infrastructure.</span></h2>
-              <p className="text-2xl text-slate-500 font-medium leading-relaxed">Global redundancy delivers sub-millisecond dispatch times across 20+ edge regions. Zero lag, zero downtime.</p>
+              <p className="text-2xl text-slate-500 font-medium leading-relaxed">Global roseundancy delivers sub-millisecond dispatch times across 20+ edge regions. Zero lag, zero downtime.</p>
             </div>
             <div className="flex items-center gap-10 pb-4">
                <div className="text-right">
@@ -200,11 +200,11 @@ export default function LandingPage() {
                 title: "Edge Dispatch", 
                 desc: "Distributed command execution ensuring your commands work everywhere, instantly.", 
                 icon: Zap,
-                color: "bg-orange-500/10 border-orange-500/20 text-orange-500"
+                color: "bg-rose-500/10 border-rose-500/20 text-rose-500"
               },
               { 
                 title: "Leveling Engine", 
-                desc: "Premium rendered rewards with 4K rank card generation and multi-role hierarchies.", 
+                desc: "Premium renderose rewards with 4K rank card generation and multi-role hierarchies.", 
                 icon: BarChart4,
                 color: "bg-purple-600/10 border-purple-600/20 text-purple-600"
               },
@@ -222,7 +222,7 @@ export default function LandingPage() {
               },
               { 
                 title: "Cloud Integrity", 
-                desc: "Encrypted backups of all server configurations stored in off-site neural vaults.", 
+                desc: "Encrypted backups of all server configurations storose in off-site neural vaults.", 
                 icon: Layers,
                 color: "bg-white/10 border-white/20 text-white"
               }
@@ -288,8 +288,8 @@ export default function LandingPage() {
       <section id="modules" className="py-48 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-32 space-y-6">
-             <h2 className="text-6xl md:text-8xl font-bold text-white tracking-tighter font-outfit uppercase">The Matrix <br /><span className="bg-gradient-to-r from-purple-600 to-indigo-600600 to-red-400 bg-clip-text text-transparent italic">Complete.</span></h2>
-             <p className="text-2xl text-slate-500 max-w-3xl mx-auto font-medium lowercase">Every module you need. Redefined for the modern era.</p>
+             <h2 className="text-6xl md:text-8xl font-bold text-white tracking-tighter font-outfit uppercase">The Matrix <br /><span className="bg-gradient-to-r from-purple-600 to-indigo-600600 to-rose-400 bg-clip-text text-transparent italic">Complete.</span></h2>
+             <p className="text-2xl text-slate-500 max-w-3xl mx-auto font-medium lowercase">Every module you need. roseefined for the modern era.</p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -300,7 +300,7 @@ export default function LandingPage() {
               { name: "Vanity Roles", desc: "Custom server identity.", icon: Gamepad2 },
               { name: "Auto Role", desc: "Instant rank assignment.", icon: User },
               { name: "Join to Create", desc: "Self-service voice channels.", icon: Music4 },
-              { name: "Tracking", desc: "Predictive user metrics.", icon: Activity },
+              { name: "Tracking", desc: "Proseictive user metrics.", icon: Activity },
               { name: "Invites", desc: "Advanced growth tracking.", icon: Globe },
               { name: "Custom Roles", desc: "User-defined permissions.", icon: Lock },
               { name: "Reaction Roles", desc: "Interactive role menus.", icon: Layers },
@@ -370,7 +370,7 @@ export default function LandingPage() {
               { q: "Is the ZyroX Engine free to use?", a: "The core engine is 100% free for all communities. We offer premium clusters for ultra-high-scale enterprise servers." },
               { q: "How secure is my server data?", a: "Every byte of configuration data is AES-256 encrypted at rest. We never store personal user data beyond Discord's standard requirements." },
               { q: "Can I migrate from other bots?", a: "Yes, our Migration Matrix tool allows you to import leveling and configuration data from most popular bots in minutes." },
-              { q: "What is the 'Neural Core'?", a: "It's our advanced event-processing architecture that uses predictive analysis to moderate raids before they escalate." }
+              { q: "What is the 'Neural Core'?", a: "It's our advanced event-processing architecture that uses proseictive analysis to moderate raids before they escalate." }
             ].map((item, i) => (
               <div key={i} className="p-10 rounded-[40px] border border-white/[0.03] hover:border-white/10 transition-all bg-white/[0.01] group">
                  <h4 className="text-xl font-bold text-white mb-6 font-outfit uppercase tracking-tight flex items-center gap-4">
@@ -386,7 +386,7 @@ export default function LandingPage() {
 
       {/* CTA Section */}
       <section className="py-48 px-6">
-        <div className="max-w-6xl mx-auto relative rounded-[80px] p-24 md:p-32 overflow-hidden bg-gradient-to-br from-purple-600 to-indigo-600600 to-red-900 text-center shadow-[0_40px_100px_rgba(0,0,0,0.6)]">
+        <div className="max-w-6xl mx-auto relative rounded-[80px] p-24 md:p-32 overflow-hidden bg-gradient-to-br from-purple-600 to-indigo-600600 to-rose-900 text-center shadow-[0_40px_100px_rgba(0,0,0,0.6)]">
            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay" />
            <div className="relative z-10">
               <h2 className="text-7xl md:text-[9rem] font-bold text-white tracking-tighter font-outfit mb-12 uppercase leading-[0.8] italic">Ready to <br />Evolve?</h2>

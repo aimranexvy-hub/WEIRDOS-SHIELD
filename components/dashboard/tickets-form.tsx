@@ -197,7 +197,7 @@ export function TicketsForm({ initialConfig, guildId }: TicketsFormProps) {
                         <SelectItem value="2">Blurple</SelectItem>
                         <SelectItem value="1">Grey</SelectItem>
                         <SelectItem value="3">Green</SelectItem>
-                        <SelectItem value="4">Red</SelectItem>
+                        <SelectItem value="4">rose</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -263,7 +263,7 @@ export function TicketsForm({ initialConfig, guildId }: TicketsFormProps) {
                     <Input 
                         value={editingEmbed.color || ""} 
                         onChange={(e) => setEditingEmbed({...editingEmbed, color: e.target.value ? parseInt(e.target.value) : null})}
-                        placeholder="e.g. 16711680 for Red"
+                        placeholder="e.g. 16711680 for rose"
                     />
                   </div>
                   <div className="space-y-2">

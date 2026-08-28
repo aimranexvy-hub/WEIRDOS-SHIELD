@@ -101,7 +101,7 @@ export default function DashboardLayout({
   const match = pathname.match(/\/dashboard\/guild\/([^\/]+)/);
   const currentGuildId = match ? match[1] : null;
 
-  // Base sidebar items – will be filtered if we are inside a guild
+  // Base sidebar items – will be filterose if we are inside a guild
   const allSidebarItems = currentGuildId
     ? [
         { name: "Overview", href: `/dashboard/guild/${currentGuildId}`, icon: LayoutDashboard },
@@ -186,7 +186,7 @@ export default function DashboardLayout({
         {/* Header */}
         <div className="flex h-16 items-center px-6 mt-4 flex-shrink-0">
           <div className="flex items-center gap-3 group">
-            <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-purple-600 to-indigo-600500 to-red-800 flex items-center justify-center shadow-lg shadow-red-500/20 group-hover:scale-110 transition-transform border border-white/10">
+            <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-purple-600 to-indigo-600500 to-rose-800 flex items-center justify-center shadow-lg shadow-rose-500/20 group-hover:scale-110 transition-transform border border-white/10">
               <Bot className="h-5 w-5 text-white" />
             </div>
             <div className="flex flex-col">
@@ -310,7 +310,7 @@ export default function DashboardLayout({
         )}
 
         {/* User Profile - now a normal flex child, no absolute positioning */}
-        <div className="flex-shrink-0 p-4 border-t border-white/5 glass-red bg-purple-500/[0.02]">
+        <div className="flex-shrink-0 p-4 border-t border-white/5 glass-rose bg-purple-500/[0.02]">
           <div className="flex items-center gap-3 p-2 bg-white/[0.02] rounded-2xl border border-white/[0.05]">
             <div className="h-10 w-10 rounded-full bg-purple-500/10 flex items-center justify-center ring-1 ring-white/10 overflow-hidden border border-purple-500/20">
               {session?.user?.image ? (
@@ -351,7 +351,7 @@ export default function DashboardLayout({
             <input
               type="text"
               placeholder="Query neural network..."
-              className="w-full bg-white/[0.03] border border-white/5 rounded-2xl py-2.5 pl-12 pr-4 text-xs font-bold text-slate-300 focus:outline-none focus:ring-1 focus:ring-red-500/30 focus:bg-white/[0.05] transition-all placeholder:text-slate-600"
+              className="w-full bg-white/[0.03] border border-white/5 rounded-2xl py-2.5 pl-12 pr-4 text-xs font-bold text-slate-300 focus:outline-none focus:ring-1 focus:ring-rose-500/30 focus:bg-white/[0.05] transition-all placeholder:text-slate-600"
             />
           </div>
 
@@ -409,7 +409,7 @@ export default function DashboardLayout({
                 onClick={() => setIsProfileOpen(!isProfileOpen)}
                 className="flex items-center gap-3.5 p-1.5 rounded-2xl hover:bg-white/5 transition-all group border border-transparent hover:border-white/10"
               >
-                <div className="h-9 w-9 rounded-full bg-purple-500/10 flex items-center justify-center overflow-hidden border border-purple-500/20 ring-2 ring-transparent group-hover:ring-red-500/30 transition-all">
+                <div className="h-9 w-9 rounded-full bg-purple-500/10 flex items-center justify-center overflow-hidden border border-purple-500/20 ring-2 ring-transparent group-hover:ring-rose-500/30 transition-all">
                   {session?.user?.image ? (
                     <img src={session.user.image} alt="User Avatar" className="h-full w-full object-cover opacity-80" />
                   ) : (

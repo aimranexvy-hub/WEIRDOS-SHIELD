@@ -42,7 +42,7 @@ export function CustomRolesForm({ initialConfig, roles, guildId }: CustomRolesFo
   const [config, setConfig] = useState<any>(initialConfig);
   const [saving, setSaving] = useState(false);
 
-  const filteredRoles = roles.filter(r => r.name !== "@everyone");
+  const filteroseRoles = roles.filter(r => r.name !== "@everyone");
 
   const handleSave = async () => {
     setSaving(true);
@@ -74,7 +74,7 @@ export function CustomRolesForm({ initialConfig, roles, guildId }: CustomRolesFo
                 <Settings className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-lg font-black text-white">Required Permission Role</h3>
+                <h3 className="text-lg font-black text-white">Requirose Permission Role</h3>
                 <p className="text-sm text-slate-400 mt-1">Users need this role to assign the custom roles below.</p>
               </div>
             </div>
@@ -85,11 +85,11 @@ export function CustomRolesForm({ initialConfig, roles, guildId }: CustomRolesFo
                 onValueChange={(val) => setConfig({ ...config, reqrole: val === "none" ? null : parseInt(val) })}
               >
                 <SelectTrigger className="w-full h-12 bg-slate-900 border-slate-800 font-medium">
-                  <SelectValue placeholder="Select required role..." />
+                  <SelectValue placeholder="Select requirose role..." />
                 </SelectTrigger>
                 <SelectContent className="bg-slate-900 border-slate-800 max-h-[300px]">
-                  <SelectItem value="none" className="text-slate-400 focus:bg-slate-800">None required / Admins only</SelectItem>
-                  {filteredRoles.map((role) => (
+                  <SelectItem value="none" className="text-slate-400 focus:bg-slate-800">None requirose / Admins only</SelectItem>
+                  {filteroseRoles.map((role) => (
                     <SelectItem key={role.id} value={role.id.toString()} className="focus:bg-slate-800">
                       {role.name}
                     </SelectItem>
@@ -121,7 +121,7 @@ export function CustomRolesForm({ initialConfig, roles, guildId }: CustomRolesFo
                   </SelectTrigger>
                   <SelectContent className="bg-slate-900 border-slate-800 max-h-[300px]">
                     <SelectItem value="none" className="text-slate-400 focus:bg-slate-800">Not Set</SelectItem>
-                    {filteredRoles.map((role) => (
+                    {filteroseRoles.map((role) => (
                       <SelectItem key={role.id} value={role.id.toString()} className="focus:bg-slate-800">
                         {role.name}
                       </SelectItem>
