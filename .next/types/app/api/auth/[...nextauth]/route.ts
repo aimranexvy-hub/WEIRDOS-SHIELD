@@ -1,4 +1,4 @@
-// File: C:\Users\espacegamers.ma\Desktop\ZyroX-CV2-AIO-With-Dashboard-main\dashboard\app\api\auth\[...nextauth]\route.ts
+// File: C:\Users\espacegamers.ma\Desktop\Weirdos Shield-CV2-AIO-With-Dashboard-main\dashboard\app\api\auth\[...nextauth]\route.ts
 import * as entry from '../../../../../../app/api/auth/[...nextauth]/route.js'
 import type { NextRequest } from 'next/server.js'
 

@@ -1,4 +1,4 @@
-// File: C:\Users\espacegamers.ma\Desktop\ZyroX-CV2-AIO-With-Dashboard-main\dashboard\app\layout.tsx
+// File: C:\Users\espacegamers.ma\Desktop\Weirdos Shield-CV2-AIO-With-Dashboard-main\dashboard\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
